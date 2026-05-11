@@ -2,7 +2,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Nodes.Cards;
 
-namespace RevertAncientBorder;
+namespace HideAncientGlass;
 
 [HarmonyPatch(typeof(NCard))]
 public static class NCardPatches
