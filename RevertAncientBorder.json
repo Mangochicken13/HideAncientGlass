@@ -1,9 +1,10 @@
 {
   "id": "RevertAncientBorder",
-  "name": "Revert Ancient Border",
+  "name": "Hide Ancient Glass",
   "author": "Mangochicken",
-  "description": "Slay the Spire 2 mod ",
-  "version": "v0.0.1",
+  "description": "Hides the glass-like overlay over the ancient cards added in Slay The Spire 2 v0.105.0",
+  "version": "v1.0.0",
+  "min_game_version": "0.105.0",
   "has_pck": false,
   "has_dll": true,
   "dependencies": [],
