@@ -1,0 +1,11 @@
+{
+  "id": "RevertAncientBorder",
+  "name": "Revert Ancient Border",
+  "author": "Mangochicken",
+  "description": "Slay the Spire 2 mod ",
+  "version": "v0.0.1",
+  "has_pck": false,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": false
+}
