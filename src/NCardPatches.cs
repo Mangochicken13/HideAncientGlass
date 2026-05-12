@@ -11,10 +11,7 @@ public static class NCardPatches
     [HarmonyPostfix]
     public static void HideGlassOverlay(NCard __instance)
     {
-        if (!__instance.IsNodeReady() || __instance == null) { return; }
-        if (__instance.Model?.Rarity == CardRarity.Ancient)
-        {
-            __instance._ancientBorderGlassOverlay.Visible = false;
-        }
+        if (!__instance.IsNodeReady() || __instance.Model == null) { return; }
+        __instance._ancientBorderGlassOverlay.Visible = false;
     }
 }
