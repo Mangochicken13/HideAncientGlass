@@ -1,3 +1,4 @@
+using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Nodes.Cards;
@@ -12,6 +13,11 @@ public static class NCardPatches
     public static void HideGlassOverlay(NCard __instance)
     {
         if (!__instance.IsNodeReady() || __instance.Model == null) { return; }
-        __instance._ancientBorderGlassOverlay.Visible = false;
+        var glassOverelay = __instance.Get("_ancientBorderGlassOverlay").As<Control>();
+        if (glassOverelay != null) { glassOverelay.Visible = false; }
+        else {
+            var shader = __instance._portraitCanvasGroup.Material as ShaderMaterial;
+            shader?.SetShaderParameter("glass", false);
+        }
     }
 }

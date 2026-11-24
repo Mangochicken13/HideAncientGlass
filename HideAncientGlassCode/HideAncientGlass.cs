@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Modding;
 namespace HideAncientGlass;
 
 [ModInitializer(nameof(Initialize))]
-public partial class HideAncientGlass : Node
+public class HideAncientGlass
 {
     public const string ModId = "HideAncientGlass";
 
